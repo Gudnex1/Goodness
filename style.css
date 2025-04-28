@@ -189,85 +189,6 @@
     padding-inline-end: 120px;
   }
 }
-@layer photos {
-  #photos {
-    margin: 0 auto;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    /* justify-content: center; */
-    margin-top: 40px;
-  }
-
-  .collage-container {
-    flex-direction: column;
-    align-items: center;
-    display: flex;
-    width: 100%;
-    max-width: 900px;
-  }
-
-  .collapsible {
-    background-color: #f4f4f4;
-    color: black;
-    cursor: pointer;
-    padding: 10px;
-    width: 50%;
-    border: 1px solid var(--border_clr);
-    border-radius: 10px;
-    text-align: center;
-    outline: none;
-    font-size: 19px;
-    transition: background-color 0.3s ease;
-  }
-  .collapsible img {
-    padding-right: 7px;
-  }
-
-  .collapsible:hover {
-    background-color: #c2c2c2;
-  }
-
-  .collapsible:after {
-    content: url("./images/down-arrow.png");
-    float: right;
-    font-size: 18px;
-    padding-top: 10px;
-  }
-
-  .collapsible.active:after {
-    content: url("./images/upward-arrow.png");
-  }
-
-  .collage-section {
-    overflow: hidden;
-    max-height: 0;
-    transition: max-height 0.5s ease-out;
-    padding: 0 10px;
-  }
-
-  .collage-section.open {
-    max-height: 900px;
-  }
-
-  .collage-item {
-    display: inline-block;
-    margin: 10px;
-    border-radius: 10px;
-    overflow: hidden;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-  }
-
-  .collage-item img {
-    width: 250px;
-    height: 250px;
-    object-fit: cover;
-    transition: transform 0.5s ease-in-out;
-  }
-  .collage-item img:hover {
-    transform: scale(1.1);
-  }
-}
 @layer footer {
   #footer {
     margin-top: 30px;
@@ -406,39 +327,6 @@
     text-align: center;
     padding-right: 30px;
   }
-  .collage-container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: 100%;
-    max-width: 500px;
-  }
-
-  .collapsible {
-    background-color: #f4f4f4;
-    color: black;
-    cursor: pointer;
-    padding: 10px;
-    width: 100%;
-    border: 1px solid var(--border_clr);
-    border-radius: 10px;
-    text-align: center;
-    outline: none;
-    font-size: 19px;
-    transition: background-color 0.3s ease;
-  }
-  .collage-section.open {
-    justify-self: center;
-    max-height: 1600px;
-    width: 480px;
-    padding-inline-start: 20px;
-  }
-  .collage-item img {
-    width: 190px;
-    height: auto;
-    object-fit: cover;
-    transition: transform 0.5s ease-in-out;
-  }
   .context {
     border: 1px solid var(--border_clr);
     padding: 30px;
@@ -454,7 +342,6 @@
     flex-direction: column;
     padding: 0 10px;
   }
-
   .flex > * {
     width: 100%;
   }
